@@ -1,0 +1,32 @@
+<div class="mt-4">
+
+    <h3>Sửa khóa học</h3>
+
+    <form class="row g-3" method="POST" action="/courses/{{course._id}}?_method=PUT">
+        <div class="col-md-6">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" name="name" value="{{course.name}}">
+        </div>
+        
+
+        <div class="col-md-6">
+            <label for="description" class="form-label">Description</label>
+            <textarea class="form-control" id="description" name="description">{{course.description}}</textarea>
+        </div>
+
+        <div class="col-md-6">
+            <label for="videoId" class="form-label">VideoId</label>
+            <input type="text" class="form-control" value = "{{course.videoId}}" id="videoId" name="videoId">
+        </div>
+
+        <div class="col-md-6">
+            <label for="level" class="form-label">Level</label>
+            <input type="text" class="form-control" value = "{{course.level}}" id="level" name="level">
+        </div>
+
+        <div class="mt-4 col-12">
+            <button type="submit" class="btn btn-primary">Lưu lại</button>
+        </div>
+    </form>
+
+</div>
