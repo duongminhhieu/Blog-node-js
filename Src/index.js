@@ -62,3 +62,39 @@ route(app);
 app.listen(port, () => {
     console.log(`App listening at http://localhost:${port}`);
 });
+
+// middleware
+
+// app.get('/middleware',
+//     function(req, res, next){
+//         if (['vethuong','vevip'].includes(req.query.ve)){
+
+//             req.face = 'Gach gach';
+//             next();
+//         }
+
+//         res.status(403).json({message: 'Not Found'});
+//     },
+//     function(req, res, next){
+//         res.json({
+//             message:  'Success',
+//             face: req.face,
+//         })
+//     }
+// )
+
+/*
+    1. Soát vé kiểm soát
+    2. Không cho vào
+    3. Cho phép vào 
+    4. chỉnh sửa
+
+
+
+    ### ứng dụng 
+    - Dựng chức năng xác  thực ( Authentication)
+    - Dựng chức năng phân quyền ()
+    - Để chia sẻ các giá trị của biến tới tất cả các views(BE)
+    
+
+*/
