@@ -3,7 +3,7 @@ const morgan = require('morgan');
 const path = require('path');
 const app = express();
 const methodOverride = require('method-override');
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 const db = require('./config/db');
 
